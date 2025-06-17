@@ -1,0 +1,11 @@
+torch==1.10.0+cu111 --find-links https://download.pytorch.org/whl/torch_stable.html
+transformers
+pandas
+datasets
+evaluate
+seqeval
+accelerate==0.26.0
+openai
+spacy
+#https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_md-0.5.4.tar.gz
+scikit-learn==1.1.2

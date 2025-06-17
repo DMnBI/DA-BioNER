@@ -1,0 +1,7 @@
+{"Disease": "Disease or phenotypic feature",
+"Chemical": "Chemical entity",
+"Species": "Organism taxon",
+"Gene": "Gene or gene product",
+"Variant": "Sequence variant",
+"CellLine": "Cell line"
+}
