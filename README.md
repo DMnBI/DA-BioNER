@@ -13,6 +13,7 @@ This repository contains the official implementation of the paper: "DA-BioNER: D
 ```bash
 git clone https://github.com/DMnBI/DA-BioNER.git
 cd DA-BioNER
+```
 
 ### 2. Environment setup
 ```bash
@@ -20,6 +21,7 @@ conda create -n da-bioner python=3.9
 conda activate da-bioner
 pip install -r requirements.txt
 python -m spacy download en_core_sci_md
+```
 
 ## Dataset
 We provide a sample subset of the BioRED dataset that has been converted into IOB format for demonstration and testing purposes.
@@ -40,11 +42,13 @@ To run the full pipeline:
 ```bash
 CUDA_VISIBLE_DEVICES=0 bash 01_Train_baseNER.sh
 bash 02_GPT_ensemble.sh
+```
 
 ## Evaluation
 To evaluate the model:
 ```bash
 CUDA_VISIBLE_DEVICES=0 bash 03_Evaluation.sh
+```
 
 ##Citation
 
