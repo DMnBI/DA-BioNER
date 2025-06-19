@@ -46,8 +46,31 @@ Please refer to the original paper and website for more information:
 ## How to run
 To run the full pipeline:
 
+### 1. Train the base NER models
 ```bash
 CUDA_VISIBLE_DEVICES=0 bash 01_Train_baseNER.sh
+```
+
+### 2. Run GPT-based ensemble
+```bash
+bash 02_GPT_ensemble.sh
+```
+⚠️ Before running this step, you must manually set your API keys in the script.
+
+**Run key setup**
+Open ```02_GPT_ensemble.sh``` and edit the following lines to include your own keys:
+```bash
+# Inside 02_GPT_ensemble.sh
+UMLS_API_KEY="your_umls_api_key_here"
+OPENAI_API_KEY="your_openai_api_key_here"
+```
+
+Make sure:
+* You have a valid UMLS API key (https://uts.nlm.nih.gov/uts/)
+* You have a valid OpenAI GPT API key (https://platform.openai.com/)
+
+Then save the file and run the script:
+```bash
 bash 02_GPT_ensemble.sh
 ```
 
