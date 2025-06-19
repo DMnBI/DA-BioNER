@@ -28,7 +28,7 @@ python -m spacy download en_core_sci_md
 ## Sample data
 We provide a **sample subset** of the BioRED dataset that has been **converted into IOB format** for demonstration and testing purposes.
 
-The sample data is extracted from the [**BioRED**] (https://doi.org/10.1093/bib/bbac282), a high-quality manually annotated dataset for biomedical relation extraction.
+The sample data files included in the `sample_files/` directory are derived from [**BioRED**] (https://doi.org/10.1093/bib/bbac282), a high-quality manually annotated dataset for biomedical relation extraction.
 Please refer to the original paper and website for more information:
 
 >Luo, Ling, et al.
