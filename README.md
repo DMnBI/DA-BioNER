@@ -5,21 +5,21 @@ This repository contains the official implementation of the paper: "DA-BioNER: D
 
 
 
-###  Overview
+##  Overview
 ![DA-BioNER Overview](Overview.jpg)
 
 **DA-BioNER** is a novel framework that integrates data augmentation, few-shot learning, and distant supervision to enhance biomedical NER. It leverages large language model (LLM)-based inference to ensemble predictions from multiple few-shot fine-tuned NER models, generating higher-quality labeled data with improved entity diversity and contextual integrity.
 
 
 
-### Getting Started
-#### 1. Clone the repository
+## Getting Started
+### 1. Clone the repository
 ```bash
 git clone https://github.com/DMnBI/DA-BioNER.git
 cd DA-BioNER
 ```
 
-#### 2. Environment setup
+### 2. Environment setup
 ```bash
 conda create -n da-bioner python=3.9
 conda activate da-bioner
@@ -29,10 +29,10 @@ python -m spacy download en_core_sci_md
 
 
 
-### Dataset
+## Dataset
 We provide a sample subset of the BioRED dataset that has been converted into IOB format for demonstration and testing purposes.
 
-#### Data source
+### Data source
 The sample data is extracted from the **[BioRED] (https://doi.org/10.1093/bib/bbac282)**, a high-quality manually annotated dataset for biomedical relation extraction.
 Please refer to the original paper and website for more information:
 
@@ -43,7 +43,7 @@ Please refer to the original paper and website for more information:
 
 
 
-### How to run
+## How to run
 To run the full pipeline:
 
 ```bash
@@ -53,7 +53,7 @@ bash 02_GPT_ensemble.sh
 
 
 
-### Evaluation
+## Evaluation
 To evaluate the model:
 ```bash
 CUDA_VISIBLE_DEVICES=0 bash 03_Evaluation.sh
