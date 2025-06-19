@@ -57,7 +57,8 @@ bash 02_GPT_ensemble.sh
 ```
 ⚠️ Before running this step, you must manually set your API keys in the script.
 
-**Run key setup**
+**API key setup**
+
 Open ```02_GPT_ensemble.sh``` and edit the following lines to include your own keys:
 ```bash
 # Inside 02_GPT_ensemble.sh
