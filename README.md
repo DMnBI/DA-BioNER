@@ -6,7 +6,7 @@ This repository contains the official implementation of the paper: "DA-BioNER: D
 
 
 ##  Overview
-![DA-BioNER Overview](Overview.jpg)
+<img src="Overview.jpg" alt="DA-BioNER Overview" style="width:60%;"/>
 
 **DA-BioNER** is a novel framework that integrates data augmentation, few-shot learning, and distant supervision to enhance biomedical NER. It leverages large language model (LLM)-based inference to ensemble predictions from multiple few-shot fine-tuned NER models, generating higher-quality labeled data with improved entity diversity and contextual integrity.
 
